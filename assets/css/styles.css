@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body {
+    font-family: "Raleway";
+}
+/* ------ header carousel -----------*/
+.carousel .carousel-item {
+    transition-duration: 1.5s;
+}
+.bg-scroll{ 
+    background:transparent !important;
+}
+.bg-scroll.scrolled{
+    background: rgb(108, 184, 108) !important;
+    box-shadow: 0px 0px 17px 0px;
+    transition: all 0.5s
+}
+.image-banner{
+    height: 700px;
+    width: 100%;
+}
+.overlay{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    opacity: 0.3;
+    transition: all 0.2s ease-out;
+}
+
+/*---------Navigation section---------*/
+.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+
+.nav-link{ margin-right: 1em !important;}
+
+.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+
+.navbar-collapse{ justify-content: flex-end;}
+
+.navbar-toggler{  background:#fff !important;}
+.navbar-collapse{
+    justify-content: flex-end;
+   }
+
+/* ---our focus area section ----*/
+   .sub-heading{
+       position: relative;
+       margin-bottom:75px;
+   }
+   .sub-heading:before{
+       content:"";
+       position: absolute;
+       top: 100%;
+       left: 50%;
+       margin-left: -3%;
+       width: 6%;
+       height:1 px;
+       background-color: deepskyblue;
+       z-index: 1;
+       transition: 0.3s ease;
+       -webkit-transition: 0.3s ease;
+   }
+   .sub-heading:hover:before{
+    width: 24%;
+    margin-left: 12px;
+}
+.sub-heading:after{
+    content:"";
+       position: absolute;
+       top: 100%;
+       left: 50%;
+       margin-left: -13%;
+       width: 24%;
+       height:1 px;
+       background-color: #e1e1e1;
+       z-index: 1;
+       transition: 0.3s ease;
+       -webkit-transition: 0.3s ease;
+}
+.sub-heading p{
+    color: #818181;
+    display: flex;
+    padding: 0px 0px 26px;
+    position: relative;
+    line-height: 24px;
+    letter-spacing: 0.025em;
+}
+/*-----------services ----------*/
+.page-section{
+    margin-top: 100px;
+}
+.intro-block{
+    position: relative;
+    background: #f7f7f7;
+    margin: 50px 0px 50px;
+    padding: 70px 25px 40px;
+}
+.intro-block:hover, .intro-block:active{
+    background:rgb(10, 88, 10);
+}
+.intro-block:hover{
+    transition: .6s ease;
+    -webkit-transition: .6s ease;
+    -moz-transition: .6s ease;
+    -o-transition: .6s ease;
+    -ms-transition: .6s ease;
+}
+.intro-block .intro-icon{
+    position: absolute;
+    top: -31px;
+    left: 50px;
+    margin-left: 30px;
+}
+.intro-block .fa{
+    width:63px;
+    height: 63px;
+    font-size: 30px;
+    color:white;
+    line-height: 2;
+    background: green;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px #cceef9;
+}
+.intro-block:hover .fa, .intro-block.active .fa{
+    background:white;
+    color: green;
+    box-shadow: 0px 0px 10px green;
+}
+.intro-block h3{
+    font-size: 18px;
+    color: green;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.intro-block p{
+    color: #505050;
+}
+.intro-block:hover h3, .intro-block:hover p{
+    color: #f6f6f6;
+}
+
+/*--------why do we exit section--------*/
+.feature-area{
+    padding: 100px 0px;
+    margin-top: -10px;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/assets/image/agro/trees.jpg");
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+}
+.title h2, p{
+    color:white;
+}
+.title .sub-heading p{
+    color: #f3f3f3;
+    border-color: green;
+}
+.single-feature h3{
+    color:#f3f3f3;
+}
+.single-feature {
+    position:relative;
+    width:325px;
+    float: left;
+    padding:30px;
+    text-align:center;
+    border-right: 1px solid rgb(79, 201, 79);
+    border-bottom: 1px solid rgb(39, 231, 39);
+    transition: .6s ease-in;
+    -webkit-transition: .6s ease-in;
+    -moz-transition: .6s ease-in;
+    -o-transition: .6s ease-in;
+    -ms-transition: .6s ease-in;
+}
+.feature-block:after{
+    content:'';
+    display:table;
+}
+.feature-block:after{
+    clear: both;
+}
+.feature-icon {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+.single-feature i.fa{
+    border: 2px solid;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    background: rgb(87, 209, 87);
+    color: white;
+    height:50px;
+    width: 50px;
+    transition: .3s ease;
+}
+.feature-block:hover .single-feature{
+    border-color:white;
+    transition: .3s ease;
+}
+.single-feature:hover .feature-icon .fa{
+    border: 2px solid green;
+    background: white;
+    color: green;
+}
+.single-feature:nth-of-type(even){
+    border-right: none;
+}
+.single-feature:nth-last-child(2){
+    border-bottom: none;
+}
+.single-feature:last-child{
+    border-bottom: none;
+}
+.feature-mockup{
+    position: relative;
+}
+.feature-area .sub-heading p{
+    color:white;
+}.mock-image{
+    height: 600px;
+    width: 400px;
+}
+
+/*---------more feature section --------------*/
+.more-feature{
+    padding: 100px 0px;
+    margin-top: -40px;
+}
+.more-feature .title h2{
+    color: black;
+}
+.more-feature .sub-heading p{
+    color: grey;
+}
+.feature-list ul{
+    list-style: none;
+    padding-left: 100px;
+}
+.feature-list li{
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 80px;
+}
+.feature-list li:hover i{
+    color:white;
+    background-color:green;
+    transition: 0.5s ease;
+    -webkit-transition: .5s ease-in;
+    -moz-transition: .5s ease-in;
+    -o-transition: .5s ease-in;
+    -ms-transition: .5s ease-in;
+}
+.more-feature-icon{
+    position: absolute;
+    left:0
+}
+.more-feature-icon i{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    background: white;
+    color: green;
+    border-radius: 50%;
+    border: 2px solid green;
+    line-height: 50px;
+}
+.feature-details h3{
+    color: green;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.feature-details p{
+    color: #616161;
+    font-weight: 200
+}
+
+/* ------------- Testimonals Sildder Section -----------*/
+.testimonals{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("/assets/image/agro/sacks.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 50px;
+    padding-bottom: 80px;
+    margin-top: -100px;
+}
+.testimonals .carousel-indicators{
+    bottom: -60px;
+}
+.testimonals h2{
+    color: white;
+}
+.testimonals h4{
+    color: white;
+}
+.testimonals p{
+    color: white;
+}
+.testimonals .sub-heading{
+    color: white;
+}
+.testimonals .carousel-inner img{
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+    border: 3px solid green;
+    padding: 5px;
+}
+.testimonals .carousel-item h2{
+    padding-top: 30px;
+}
+.testimonals .carousel-indicators li.active{
+    background-color: green;
+}
+
+/* ---------------- Team Section ----------*/
+.team-area{
+    padding: 80px 0;
+}
+.teaxt-area .sub-heading{
+    margin-bottom: 50px;
+}
+.team-mate{
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: -50px;
+    overflow: hidden;
+    min-height: 200px;
+    height: 200px;
+    min-width: 200px;
+    width:200px;
+    border: 3px solid green;
+    border-radius: 50%;
+}
+.team-mate img{
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100;
+    border-radius: 50%;
+}
+.team-title h3{
+    color: green;
+    font-size: 20px;
+    font-weight: 700px;
+}
