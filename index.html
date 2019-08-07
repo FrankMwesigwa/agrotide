@@ -12,230 +12,121 @@
   <link href="assets/image/favicon.png" rel="icon">
   <link href="assets/image/apple-touch-icon.png" rel="apple-touch-icon">
 
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Oswald&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet" />
     <title>Agro - Tide Limited</title>
   </head>
 
-  <body id="page-top">
+  <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg bg-scroll fixed-top ">
-      <a class="navbar-brand" href="#">AgroTide</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+    <nav class="navbar navbar-expand-lg trn fixed-top">
+      <a class="navbar-brand" href="#">Agro Tide Limited</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse " id="navbarSupportedContent">
-        <ul class="navbar-nav mr-4">
-          <li class="nav-item">
-            <a class="nav-link" data-value="about" href="#">About us</a>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="portfolio" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="blog" href="#">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="team" href="#"> OurFarmers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link " data-value="contact" href="#">Contact us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">What we do</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact us</a></li>
         </ul>
       </div>
     </nav>
 
-    <div
-      id="carouselExampleIndicators"
-      class="carousel slide"
-      data-ride="carousel"
-    >
-      <ol class="carousel-indicators">
-        <li
-          data-target="#carouselExampleIndicators"
-          data-slide-to="0"
-          class="active"
-        ></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="overlay"></div>
-          <img
-            src="/assets/image/agro/farmergroup.jpg" class="image-banner"
-          />
+     <!--Carousel section-->
+     <section>
+     <div class="bd-example">
+      <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active overlay" data-interval="2000">
+            <img src="/assets/image/agro/farmergroup.jpg" class="d-block w-100">
+            <div class="carousel-caption">
+              <h5>First slide label</h5>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <a href="#" class="btn btn-primary">Talk to us</a>
+              <a href="#" class="btn btn-success">Learn more</a>
+            </div>
+          </div>
+          <div class="carousel-item overlay" data-interval="2000">
+            <img src="/assets/image/agro/store.jpg" class="d-block w-100">
+            <div class="carousel-caption">
+              <h5>Second slide label</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary">Talk to us</a>
+              <a href="#" class="btn btn-success">Learn more</a>
+            </div>
+          </div>
+          <div class="carousel-item overlay" data-interval="2000">
+            <img src="/assets/image/agro/director.jpg" class="d-block w-100">
+            <div class="carousel-caption">
+              <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+              <a href="#" class="btn btn-primary">Talk to us</a>
+              <a href="#" class="btn btn-success">Learn more</a>
+            </div>
+          </div>
         </div>
-        <div class="carousel-item">
-          <div class="overlay"></div>
-          <img
-            src="assets/image/agro/store.jpg" class="image-banner"
-            alt="..."
-          />
-        </div>
-        <div class="carousel-item">
-          <div class="overlay"></div>
-          <img src="assets/image/agro/director.jpg" class="image-banner"/>
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleIndicators"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
     </div>
+  </section>
 
-    <!-- Services -->
-    <section class="page-section" id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2>Get Involved, Get Innovated</h2>
-            <div class="sub-heading">
-              <p>
-                Agro-tide Ltd is a company limited by shares that was incorporated in Uganda for the purpose of farming, capacity building of farmers, agricultural produce processing, marketing and general improvement of the lives of the people involved either indirectly or directly in the projects. Business premises are Located in Soroti town in eastern Uganda on Moroto road with a branch in Arua District. Agro tide limited has been in operation since 2013.
-              </p>
-            </div>
+    <!--what we do-->
+    <section id="services">
+      <div class="container text-center">
+          <h1 class="title">About us & What we do</h1>
+          <p class="services-intro">Agro-tide Limited is a company limited by shares that was incorporated in Uganda for the purpose of farming, capacity building of farmers, agricultural produce processing, marketing and general improvement of the lives of the people involved either indirectly or directly in the projects. <br><br>Business premises are Located in Soroti town in eastern Uganda on Moroto road with a branch in Arua District. Agro tide limited has been in operation since 2013.
+          </p>
+          <div class="row text-center">
+              <div class="col-md-3 services">
+                <i class="fas fa-balance-scale"></i>
+                  <h4>Agricultural Produce</h4>
+                  <p>We buy produce mainly sorghum, maize, simsim, soya millet from rural based farmers at relatively higher prices than other produce dealers</p>
+              </div>
+              <div class="col-md-3 services">
+                <i class="fab fa-creative-commons-nc"></i>
+                      <h4>Value Addition</h4>
+                      <p>We play a key role in value-added processing and marketing of agricultural commodities. We export our produce to Sudan, Kenya and Rwanda.</p>
+              </div>
+              <div class="col-md-3 services">
+                <i class="fab fa-leanpub"></i>
+                          <h4>Farmer Trainings</h4>
+                          <p>We mobilize rural farmers to grow quality agricultural produce. The farmers are provided with quality seed, basic training in post harverst management .</p>
+              </div>
+              <div class="col-md-3 services">
+                <i class="fas fa-house-damage"></i>
+                <h4>Warehouse Storage</h4>
+                <p>We provide storage and Warehousing facilities for our clients and farmers and even transport their produce..</p>
+    </div>
           </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-3">
-            <div class="intro-block">
-              <span class="intro-icon"><i class="fa fa-paint-brush"></i></span>
-              <h3>Agricultural Produce</h3>
-              <p>
-                We buy produce mainly sorghum, maize, simsim, soya millet from rural based farmers at relatively higher prices than other produce dealers
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="intro-block">
-              <span class="intro-icon"><i class="fa fa-building"></i></span>
-              <h3>Value Addition </h3>
-              <p>
-                We play a key role in value-added processing and marketing of agricultural commodities. We export our produce to Sudan, Kenya and Rwanda.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="intro-block">
-              <span class="intro-icon"><i class="fa fa-users"></i></span>
-              <h3>Farmer Trainings Support</h3>
-              <p>
-                We mobilize rural farmers to grow quality agricultural produce. The farmers are provided with quality seed, basic training in post harverst management .
-              </p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="intro-block">
-              <span class="intro-icon"><i class="fa fa-lightbulb-o"></i></span>
-              <h3>Warehousing facilities</h3>
-              <p>
-                We provide storage and Warehousing facilities for our clients and farmers and even transport their produce.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
+  </section>
 
-    <!-- Why we exit  -->
-    <section class="feature-area" id="portfolio">
+    <!-- Parallax  -->
+    <section class="parallax">
       <div class="container">
-        <div class="row title">
+        <div class="row">
           <div class="col-lg-12 text-center">
-            <h2>Why do We Exist</h2>
+            <h2>We realized that climate change is negatively impacting on agricultural productivity; this has influenced us to embark on agro-forestry projects. We have embarked on planting of pine trees which is still on going.</h2>
           </div>
-        </div>
-        <div class="row">
-          <div class="sub-heading">
-            <p>
-              Agro-tide limited primarily deals in agricultural produce with a bias in grains and pulses. The company mobilizes rural farmers to grow quality agricultural produce (green grams, sesame, soya bean, sorghum, maize, millet e.t.c). 
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12 col-lg-8 text-center">
-            <div class="feature-block">
-              <div class="single-feature feature-circle">
-                <div class="circle"></div>
-                <span class="feature-icon"><i class="fa fa-exchange"></i></span>
-                <h3>Our Vision</h3>
-                <p>
-                  To partner with governmental, commercial, international private entities in realizing strategic food security and achieving long-term growth and sustainability.
-                </p>
-              </div>
-              <div class="single-feature feature-circle">
-                <div class="circle"></div>
-                <span class="feature-icon"
-                  ><i class="fa fa-star-half-o"></i
-                ></span>
-                <h3>Our Mission</h3>
-                <p>
-                  To grow into a sustainable agricultural and food products provider and partner, ensuring supply sufficiency, high quality of farming and production operations.
-                </p>
-              </div>
-              <div class="single-feature feature-circle">
-                <div class="circle"></div>
-                <span class="feature-icon"
-                  ><i class="fa fa-arrows-alt"></i
-                ></span>
-                <h3>Service Excellence</h3>
-                <p>
-                  Building an organizational culture based on service and operational excellence in thought and in execution.
-                </p>
-              </div>
-              <div class="single-feature feature-circle">
-                <div class="circle"></div>
-                <span class="feature-icon"><i class="fa fa-cog"></i></span>
-                <h3>Social Responsibility</h3>
-                <p>
-                  And saving the best for last, our principal core value is our belief in God and entrusting his guidance to build our company to the benefit of society
-                </p>
-              </div>
-            </div>
-          </div>
-          <!-- <div class="col-sm-4 col-lg-4">
-            <div class="feature-mockup">
-              <img src="/assets/image/handphone.jpg" class="mock-image" alt="">
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -255,18 +146,18 @@
        </div>
        <div class="row">
          <div class="col-md-5">
-           <img src="assets/image/agro/ceo.jpg" class="img-fluid" alt="">
+           <img src="assets/image/agro/ceo.png" class="img-fluid" alt="">
          </div>
          <div class="col-md-7">
            <div class="feature-list">
              <ul>
                <li>
                  <div class="more-feature-icon">
-                   <i class="fa fa-arrows-alt"></i>
+                  <i class="fas fa-low-vision"></i>
                  </div>
                  <div class="feature-details">
-                   <h3>Fair Price for Farmers</h3>
-                   <p>We buy agricultural produce from rural based farmers at relatively high prices compared to the prevailing market price.</p>
+                   <h3>Our Vision</h3>
+                   <p>To partner with governmental, commercial, international private entities in realizing strategic food security and achieving long-term growth and sustainability.</p>
                  </div>
                </li>
                <li>
@@ -274,8 +165,8 @@
                     <i class="fa fa-cog"></i>
                   </div>
                   <div class="feature-details">
-                    <h3>Operational</h3>
-                    <p>We take pride in providing agricultural services and goods that fulfill the desires of the clients. </p>
+                    <h3>Our Mission</h3>
+                    <p>To grow into a sustainable agricultural and food products provider and partner, ensuring supply sufficiency, high quality of farming and production operations. </p>
                   </div>
                 </li>
                 <li>
@@ -283,17 +174,17 @@
                       <i class="fa fa-mobile"></i>
                     </div>
                     <div class="feature-details">
-                      <h3>Market</h3>
-                      <p>The understanding of the market in all its aspects and the design and delivery of strategies that will fully exploit the product's and service's potential. </p>
+                      <h3>Service Excellence</h3>
+                      <p>Building an organizational culture based on service and operational excellence in thought and in execution. </p>
                     </div>
                   </li>
                   <li>
                       <div class="more-feature-icon">
-                        <i class="fa fa-undo"></i>
+                        <i class="fas fa-user-shield"></i>
                       </div>
                       <div class="feature-details">
-                        <h3>Agro Forestry</h3>
-                        <p>We realized that climate change is negatively impacting on agricultural productivity; this has influenced us to embark on agro-forestry projects. </p>
+                        <h3>Social Responsibility</h3>
+                        <p>And saving the best for last, our principal core value is our belief in God and entrusting his guidance to build our company to the benefit of society </p>
                       </div>
                     </li>
              </ul>
@@ -323,22 +214,16 @@
                </ol>
                <div class =" carousel-inner">
                   <div class = "carousel-item active text-center">
-                     <img src = "assets/image/FrankProfile.jpg" class="center-block">
-                     <h2>James Tumwiine</h2>
-                     <h4>Managing Director</h4>
-                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ad expedita voluptatibus beatae, cum vero provident perspiciatis alias sit dignissimos nulla vel adipisci quisquam rem odio obcaecati ipsa totam inventore?</p>
+                     <img src = "assets/image/agro/sorting.jpg" class="center-block">
+                     <h2>Female staff sorting and grading of beans in Agro-tide warehouse.</h2>
                   </div>
                   <div class = "carousel-item text-center">
-                      <img src = "assets/image/FrankProfile3.jpg" class="center-block">
-                      <h2>Benjamin Mwesigwa</h2>
-                      <h4>Graphicals 3D Aninamtion</h4>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ad expedita voluptatibus beatae, cum vero provident perspiciatis alias sit dignissimos nulla vel adipisci quisquam rem odio obcaecati ipsa totam inventore?</p>
+                      <img src = "assets/image/agro/womencassava.jpg" class="center-block">
+                      <h2>Female staff sorting and grading of beans in Agro-tide warehouse.</h2>
                    </div>
                    <div class = "carousel-item text-center">
-                      <img src = "assets/image/FrankProfile.jpg" class="center-block">
-                      <h2>Frank Mwesigwa</h2>
-                      <h4>Technical Lead</h4>
-                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In ad expedita voluptatibus beatae, cum vero provident perspiciatis alias sit dignissimos nulla vel adipisci quisquam rem odio obcaecati ipsa totam inventore?</p>
+                      <img src = "assets/image/agro/banner.jpg" class="center-block">
+                      <h2>Agro tide group members receiving quality seed for planting</h2>
                    </div>
            </div>
          </div>

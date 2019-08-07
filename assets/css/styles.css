@@ -1,47 +1,144 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-body {
-    font-family: "Raleway";
+body{
+    margin: 0;
+    padding: 0;
 }
-/* ------ header carousel -----------*/
-.carousel .carousel-item {
-    transition-duration: 1.5s;
+/* ------------ Title Underline ------------*/
+.title::before{
+    content: '';
+    background: green;
+    height: 5px;
+    width: 150px;
+    margin-left: auto;
+    margin-right:auto;
+    display:block;
+    transform: translateY(63px);
 }
-.bg-scroll{ 
-    background:transparent !important;
-}
-.bg-scroll.scrolled{
-    background: rgb(108, 184, 108) !important;
-    box-shadow: 0px 0px 17px 0px;
-    transition: all 0.5s
-}
-.image-banner{
-    height: 700px;
-    width: 100%;
-}
-.overlay{
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(0,0,0,0.5);
-    opacity: 0.3;
-    transition: all 0.2s ease-out;
+.title::after{
+    content: '';
+    background: green;
+    height: 10px;
+    width: 50px;
+    margin-left: auto;
+    margin-right:auto;
+    margin-bottom:40px;
+    display:block;
+    transform: translateY(8px);
 }
 
 /*---------Navigation section---------*/
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+.navbar-brand {
+    margin-top:-5px;
+    margin-left:100px;
+    font-size:40px;
+    font-weight:bold;
+    color: green !important;
+    text-transform:capitalize; 
+    text-shadow:3px 3px 5px #777;    
+}
+.mynav a {
+    margin-right: 20px;
+    color:green !important;
+    border-bottom: 2px solid transparent;
+}
 
-.nav-link{ margin-right: 1em !important;}
+.mynav a:hover {
+    border-bottom: 2px solid green;
+}
 
-.nav-link:hover{ background: #f4f4f4; color: #f97300; }
+.active a {
+    border-bottom: 2px solid green;
+}
+.trn {
+    background: transparent !important;
+    z-index:999;
+}
 
-.navbar-collapse{ justify-content: flex-end;}
+.trn a {
+    margin-right: 30px;
+    color:greenyellow!important;
+    border-bottom: 2px solid transparent;
+}
 
-.navbar-toggler{  background:#fff !important;}
-.navbar-collapse{
-    justify-content: flex-end;
-   }
+.trn a:hover {
+    border-bottom: 2px solid green !important;
+}
+.hactive a {
+    border-bottom: 2px solid green;
+}
+/* ----- carousel section --------*/
+.carousel-caption {
+    margin-bottom:20%;
+    margin-bottom: 20%;
+    padding: 50px 100px;
+}
+
+.carousel-caption h5{
+    font-size:60px;
+    text-transform:uppercase;
+}
+
+.carousel-caption p{
+    font-size:20px;
+}
+.overlay:after {
+    content:"";
+    display:block;
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(0,0,0,0.7);
+    opacity:0.7;
+}
+.btn-primary {
+    background: #e42448;
+    border-color:transparent !important;
+    color: #fff !important;
+    border-radius: 50px;
+    padding: 10px 25px !important;
+    width: 200px;
+    text-align: center;
+    margin:10px 15px;
+}
+
+.btn-primary:hover {
+    background: #731397;
+}
+
+.btn-success {
+    background: #181174;
+    border-color:transparent !important;
+    color: #fff !important;
+    border-radius: 50px;
+    padding: 10px 25px !important;
+    width: 200px;
+    text-align: center;
+    margin:10px 15px;
+}
+
+.btn-success:hover {
+    background: #731397;
+}
+
+.btn-danger {
+    background: #731397;
+    border-color:transparent !important;
+    color: #fff !important;
+    border-radius: 50px;
+    padding: 10px 25px !important;
+    width: 200px;
+    text-align: center;
+    margin:10px 15px;
+}
+
+.btn-danger:hover {
+    background: #e42448;
+}
+
+.frt {
+    float:right;
+}
 
 /* ---our focus area section ----*/
    .sub-heading{
@@ -86,63 +183,44 @@ body {
     line-height: 24px;
     letter-spacing: 0.025em;
 }
-/*-----------services ----------*/
-.page-section{
-    margin-top: 100px;
+
+/* ---------Services Section -----------*/
+#services{
+    padding: 80px 0;
 }
-.intro-block{
-    position: relative;
-    background: #f7f7f7;
-    margin: 50px 0px 50px;
-    padding: 70px 25px 40px;
+.service.img{
+    width: 100px;
+    margin-top: 20px;
 }
-.intro-block:hover, .intro-block:active{
-    background:rgb(10, 88, 10);
+.services{
+    padding: 20px;
 }
-.intro-block:hover{
-    transition: .6s ease;
-    -webkit-transition: .6s ease;
-    -moz-transition: .6s ease;
-    -o-transition: .6s ease;
-    -ms-transition: .6s ease;
+.services h4{
+    padding: 5Px;
+    margin-top: 25px;
+    text-transform: capitalize;
 }
-.intro-block .intro-icon{
-    position: absolute;
-    top: -31px;
-    left: 50px;
-    margin-left: 30px;
+#services .btn-primary{
+    box-shadow: none;
+    padding: 8px 25px;
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, #a517ba, #571782);
 }
-.intro-block .fa{
-    width:63px;
-    height: 63px;
-    font-size: 30px;
-    color:white;
-    line-height: 2;
-    background: green;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px #cceef9;
+#services p{
+    color: black;
+    text-align: justify;
 }
-.intro-block:hover .fa, .intro-block.active .fa{
-    background:white;
-    color: green;
-    box-shadow: 0px 0px 10px green;
+.services-intro{
+    text-align: justify;
 }
-.intro-block h3{
-    font-size: 18px;
-    color: green;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 15px;
-}
-.intro-block p{
-    color: #505050;
-}
-.intro-block:hover h3, .intro-block:hover p{
-    color: #f6f6f6;
+#services i {
+    font-size: 50px;
+    color:green;
 }
 
-/*--------why do we exit section--------*/
-.feature-area{
+/*--------Parallax section--------*/
+.parallax{
     padding: 100px 0px;
     margin-top: -10px;
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url("/assets/image/agro/trees.jpg");
@@ -150,78 +228,9 @@ body {
     background-position:center;
     background-attachment: fixed;
 }
-.title h2, p{
-    color:white;
-}
-.title .sub-heading p{
-    color: #f3f3f3;
-    border-color: green;
-}
-.single-feature h3{
+.parallax h2, p{
     color:#f3f3f3;
-}
-.single-feature {
-    position:relative;
-    width:325px;
-    float: left;
-    padding:30px;
-    text-align:center;
-    border-right: 1px solid rgb(79, 201, 79);
-    border-bottom: 1px solid rgb(39, 231, 39);
-    transition: .6s ease-in;
-    -webkit-transition: .6s ease-in;
-    -moz-transition: .6s ease-in;
-    -o-transition: .6s ease-in;
-    -ms-transition: .6s ease-in;
-}
-.feature-block:after{
-    content:'';
-    display:table;
-}
-.feature-block:after{
-    clear: both;
-}
-.feature-icon {
-    display: inline-block;
-    margin-bottom: 20px;
-}
-.single-feature i.fa{
-    border: 2px solid;
-    padding: 10px;
-    border-radius: 50%;
-    font-size: 25px;
-    background: rgb(87, 209, 87);
-    color: white;
-    height:50px;
-    width: 50px;
-    transition: .3s ease;
-}
-.feature-block:hover .single-feature{
-    border-color:white;
-    transition: .3s ease;
-}
-.single-feature:hover .feature-icon .fa{
-    border: 2px solid green;
-    background: white;
-    color: green;
-}
-.single-feature:nth-of-type(even){
-    border-right: none;
-}
-.single-feature:nth-last-child(2){
-    border-bottom: none;
-}
-.single-feature:last-child{
-    border-bottom: none;
-}
-.feature-mockup{
-    position: relative;
-}
-.feature-area .sub-heading p{
-    color:white;
-}.mock-image{
-    height: 600px;
-    width: 400px;
+    opacity: 0.7;
 }
 
 /*---------more feature section --------------*/
@@ -304,8 +313,8 @@ body {
     color: white;
 }
 .testimonals .carousel-inner img{
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     border-radius: 100%;
     border: 3px solid green;
     padding: 5px;
