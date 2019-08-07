@@ -25,6 +25,10 @@ body{
     display:block;
     transform: translateY(8px);
 }
+p {
+    font-size: 20px;
+    line-height: 30px;
+}
 
 /*---------Navigation section---------*/
 .navbar-brand {
@@ -160,6 +164,7 @@ body{
 /* ---------Services Section -----------*/
 #services{
     padding: 80px 0;
+    font-family: Audiowide;
 }
 .service.img{
     width: 100px;
@@ -190,6 +195,16 @@ body{
 #services i {
     font-size: 50px;
     color:green;
+}
+
+/*--- sections 2 service ----*/
+.services2-area{
+    background-color: coral;
+}
+.btn-secondary{
+    color: #fff;
+    background-color: #2980b9;
+    border-color: #2980b9;
 }
 
 /*--------Parallax section--------*/
