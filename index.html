@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" />
     <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="assets/css/styles.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet" />
@@ -90,31 +91,31 @@
   </section>
 
     <!--what we do-->
-    <section id="services">
+    <section class="services">
       <div class="container text-center">
           <h1 class="title">About us & What we do</h1>
           <p class="services-intro">Agro-tide Limited is a company limited by shares that was incorporated in Uganda for the purpose of farming, capacity building of farmers, agricultural produce processing, marketing and general improvement of the lives of the people involved either indirectly or directly in the projects. <br><br>Business premises are Located in Soroti town in eastern Uganda on Moroto road with a branch in Arua District. Agro tide limited has been in operation since 2013.
           </p>
           <div class="row text-center">
-              <div class="col-md-3 services">
+              <div class="col-md-3 services-box">
                 <i class="fas fa-balance-scale"></i>
                   <h4>Agricultural Produce</h4>
-                  <p>We buy produce mainly sorghum, maize, simsim, soya millet from rural based farmers at relatively higher prices than other produce dealers</p>
+                  <p class="services-text">We buy produce mainly sorghum, maize, simsim, soya millet from rural based farmers at relatively higher prices than other produce dealers</p>
               </div>
-              <div class="col-md-3 services">
+              <div class="col-md-3 services-box">
                 <i class="fab fa-creative-commons-nc"></i>
-                      <h4>Value Addition</h4>
-                      <p>We play a key role in value-added processing and marketing of agricultural commodities. We export our produce to Sudan, Kenya and Rwanda.</p>
+                      <h4>Export & Value Addition</h4>
+                      <p class="services-text">We play a key role in value-added processing and marketing of agricultural commodities. We export our produce to Sudan, Kenya and Rwanda.</p>
               </div>
-              <div class="col-md-3 services">
+              <div class="col-md-3 services-box">
                 <i class="fab fa-leanpub"></i>
                           <h4>Farmer Trainings</h4>
-                          <p>We mobilize rural farmers to grow quality agricultural produce. The farmers are provided with quality seed, basic training in post harverst management .</p>
+                          <p class="services-text">We mobilize rural farmers to grow quality agricultural produce. The farmers are provided with quality seed, basic training in post harverst management .</p>
               </div>
-              <div class="col-md-3 services">
+              <div class="col-md-3 services-boxs">
                 <i class="fas fa-house-damage"></i>
                 <h4>Warehouse Storage</h4>
-                <p>We provide storage and Warehousing facilities for our clients and farmers and even transport their produce..</p>
+                <p class="services-text">We provide storage and Warehousing facilities for our clients and farmers and even transport their produce..</p>
     </div>
           </div>
       </div>
@@ -196,7 +197,7 @@
    </section>
 
   <!--testimonals section -->
-   <section class="testimonals" id="testimonal">
+   <!-- <section class="testimonals" id="testimonal">
      <div class="container">
        <div class="row">
          <div class="col-md-12 text-center">
@@ -229,143 +230,224 @@
          </div>
        </div>
      </div>
-   </section>
+   </section> -->
 
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="testimonials" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Testimonials</h3>
+        </header>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+
+            <div class="owl-carousel testimonials-carousel wow fadeInUp">
+    
+              <div class="testimonial-item">
+                <img src="/assets/image/agro/womencarrying.jpg" class="testimonial-img" alt="">
+                <h3>Saul Goodman</h3>
+                <h4>Ceo &amp; Founder</h4>
+                <p>
+                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="/assets/image/agro/womencassava.jpg class="testimonial-img" alt="">
+                <h3>Sara Wilsson</h3>
+                <h4>Designer</h4>
+                <p>
+                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="assets/image/agro/sorting.jpg" class="testimonial-img" alt="">
+                <h3>Jena Karlis</h3>
+                <h4>Store Owner</h4>
+                <p>
+                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="assets/image/agro/womencarrying.jpg" class="testimonial-img" alt="">
+                <h3>Matt Brandon</h3>
+                <h4>Freelancer</h4>
+                <p>
+                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                </p>
+              </div>
+    
+              <div class="testimonial-item">
+                <img src="img/testimonial-5.jpg" class="testimonial-img" alt="">
+                <h3>John Larson</h3>
+                <h4>Entrepreneur</h4>
+                <p>
+                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                </p>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+    </section><!-- #testimonials -->
  
-   <!--- team section -->
-   <section class="team-area">
-     <div class="container">
-       <h3 class="team-heading">Meet Our Team Members</h3>
-       <div class="row">
-         <div class="col-md-4">
-           <div class="team-single">
-             <div class="content-area">
-               <div class="side-one">
-                 <div class="card">
-                   <div class="card-body text-center">
-                     <div class="img-area">
-                       <img src="assets/image/agro/FrankProfile.jpg" alt="">
-                      </div>
-                       <h4>Mercury Dedan</h4>
-                       <p class="team-text">Managing Director</p>
-                   </div>
-                 </div>
-               </div>
-               <div class="side-two">
-                 <div class="card">
-                   <div class="card-body text-center mt-4">
-                     <h4>Mercury Dedan</h4>
-                     <p class="team-text">
-                       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore provident perferendis eos corrupti deleniti tenetur deserunt
-                     </p>
-                     <ul class="list-inline">
-                      <li class="list-inline-item">
-                        <a href="" class="social-icon"><i class="fab fa-facebook-square"></i></a>
-                      </li>
-                      <li class="list-inline-item">
-                          <a href="" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
-                          </li>
-                      </ul>
+  <!-- Team -->
+  <section class="bg-light page-section" id="team">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/assets/image/agro/mercuy.jpg" alt="">
+            <h4>Mecury Dedan</h4>
+            <p class="text-muted">Managing Director</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/assets/image/agro/deban.png" alt="">
+            <h4>Dedan Micheal</h4>
+            <p class="text-muted">Operations Manager</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="team-member">
+            <img class="mx-auto rounded-circle" src="/assets/image/agro/FrankProfile.jpg" alt="">
+            <h4>Frank Mwesigwa</h4>
+            <p class="text-muted">Project Manager</p>
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-          </div>
-          <div class="col-md-4">
-              <div class="team-single">
-                <div class="content-area">
-                  <div class="side-one">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <div class="img-area">
-                          <img src="assets/image/agro/FrankProfile.jpg" alt="">
-                         </div>
-                          <h4>Mercury Dedan</h4>
-                          <p class="team-text">Managing Director</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="side-two">
-                    <div class="card">
-                      <div class="card-body text-center mt-4">
-                        <h4>Mercury Dedan</h4>
-                        <p class="team-text">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore provident perferendis eos corrupti deleniti tenetur deserunt
-                        </p>
-                        <ul class="list-inline">
-                         <li class="list-inline-item">
-                           <a href="" class="social-icon"><i class="fab fa-facebook-square"></i></a>
-                         </li>
-                         <li class="list-inline-item">
-                             <a href="" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                           </li>
-                           <li class="list-inline-item">
-                               <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
-                             </li>
-                         </ul>
-   
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-          </div>
-          <div class="col-md-4">
-              <div class="team-single">
-                <div class="content-area">
-                  <div class="side-one">
-                    <div class="card">
-                      <div class="card-body text-center">
-                        <div class="img-area">
-                          <img src="assets/image/agro/FrankProfile.jpg" alt="">
-                         </div>
-                          <h4>Mercury Dedan</h4>
-                          <p class="team-text">Managing Director</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="side-two">
-                    <div class="card">
-                      <div class="card-body text-center mt-4">
-                        <h4>Mercury Dedan</h4>
-                        <p class="team-text">
-                          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore provident perferendis eos corrupti deleniti tenetur deserunt
-                        </p>
-                        <ul class="list-inline">
-                         <li class="list-inline-item">
-                           <a href="" class="social-icon"><i class="fab fa-facebook-square"></i></a>
-                         </li>
-                         <li class="list-inline-item">
-                             <a href="" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                           </li>
-                           <li class="list-inline-item">
-                               <a href="" class="social-icon"><i class="fab fa-instagram"></i></a>
-                             </li>
-                         </ul>
-   
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-             </div>
-         </div>
-       </div>
-     </div>
-   </section>
+  <!-- Our Partnters -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="/assets/image/logos/envato.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="/assets/image/logos/designmodo.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="/assets/image/logos/themeforest.jpg" alt="">
+          </a>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <a href="#">
+            <img class="img-fluid d-block mx-auto" src="/assets/image/logos/creative-market.jpg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+<section class="page-section" id="contact">
+  <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8 text-center">
+            <h2 class="mt-0">Let's Get In Touch</h2>
+            <hr class="divider my-4">
+            <p class="text-muted mb-5">Ready to start your next project with us? Give us a call or send us an email and we will get bak to you as soon as possible.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 ml-auto text-center">
+          <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
+          <div> +1(202) 555-00149</div>
+        </div>
+        <div class="col-lg-4 mr-auto text-center">
+          <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
+          <a class="d-block" href="mailto:contact@yourwebsite.com">programmingknowledge@gmailc.com</a>
+        </div>
+      </div>
+  </div>
+</section>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
     <script>
       $(window).scroll(function() {
-        $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
+        $("nav").toggleClass("header-scrolled", $(this).scrollTop() > 100);
       });
     </script>
+    <script src="assets/js/main.js"></script>
+
   </body>
 </html>
